@@ -1,0 +1,16 @@
+JMP start
+  
+Day: DB "26"
+DB 0
+Month:DB "06"
+DB 0
+
+start:
+ mov A,Day
+ mov B,Month
+ push A
+ push B
+ mov A,26
+ mov B,6
+ add A,B
+HLT

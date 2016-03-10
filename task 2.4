@@ -1,0 +1,20 @@
+JMP start
+
+Hello: DB "26/06"
+       DB 0
+
+start:
+MOV C,Hello
+MOV D,232
+
+Billy:
+MOV A,[C]
+MOV [D],A
+INC C
+INC D
+CMP B,[C]
+JNZ Billy
+
+HLT
+
+
