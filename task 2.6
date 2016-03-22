@@ -1,7 +1,11 @@
+mov A,5    ;введите нужное число
+
 call fact
 
+hlt
+
 fact:
- mov A,0
+
  cmp A,0
  jnz mike
  add A,1
@@ -24,4 +28,4 @@ luk:
 ed:
  push A
 
-hlt
+ret

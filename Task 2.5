@@ -1,8 +1,11 @@
-        call max
+mov A,50    ;введите нужное число         
+
+call max
+
+hlt
 
 max:
- mov D,232
- mov A,202  
+ mov D,232  
  push A
  div 100
  cmp A,0
@@ -39,5 +42,5 @@ cris:
  add A,48
  mov [D],A
 
-hlt
+ret
          
