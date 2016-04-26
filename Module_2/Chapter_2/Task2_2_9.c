@@ -8,11 +8,13 @@ int main()
 	float sum,sredn;
 	printf("Введите число:");
 	scanf("%s",ch);
-	sum=0.;
+	sum=0;
 	printf("Количество цифр в числе: %zd \n",strlen(ch) );
 	
 	for(i=0;i<=strlen(ch)-1;i++)
 	 {
+	 	if( ch[i]==48)
+	 		continue;
 	   ch[i]-=48;
 	   sum+=ch[i];
 	 }
