@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void) 
 {
-	printf("Dec   Hex   Char \n");
+	 printf("Dec   Hex   Char \n");
 	int i;
 	printf("%3d     %#4x     NULL \n",i,i++);   
 	printf("%3d     %#4x     SOH  \n",i,i++);   

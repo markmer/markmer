@@ -4,7 +4,7 @@
 int main()
 {
 	char ch[228];
-	int i;
+	int i ;
 	float sum,sredn;
 	printf("Введите число:");
 	scanf("%s",ch);
