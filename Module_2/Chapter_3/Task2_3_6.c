@@ -18,5 +18,5 @@ f2:	for (;i<=100;i=i+5)
 		putchar(' ');
 	putchar(']');
 	printf("\n");
-	return 0;
+ 	return 0;
 }
