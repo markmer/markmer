@@ -4,7 +4,7 @@
 
 int main()
 { 
-	int n,i,j,c,k=0;
+	int n,i,j,c, k=0;
 	float D,d;
 	int **matr;
 	printf("Введите размерность квадратной матрицы: ");

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include  <stdio.h>
 #include <string.h>
  void invert(char * a,char * b,int j);
  void copy(char * a,char * b);

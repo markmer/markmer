@@ -9,7 +9,7 @@ int main()
     gets(&string1[0]);
     copy(&string1[0],&string2[0] );
     printf("Ваша строка: \n %s \nНовая строка:\n %s \n",&string1[0],&string2[0] );
-    return 0;
+    return 0 ;
 }
 
 void copy(char * a,char * b)

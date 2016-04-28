@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include "Task2_5_5_1.c"
+#include  "Task2_5_5_1.c"
 
 int main() {
 	int n,i,j,c;
