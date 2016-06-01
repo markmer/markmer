@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main () 
+int main (int argc,char * argv[]) 
 {
 	FILE *f1;
    	FILE *f2;
 	char letter;
 	char key[6]={'1', '0', '1', '1', '1', '0'};
 	int i=0;
-    f1=fopen("begin.txt", "rb");
+    f1=fopen(argv[1], "rb");
     f2=fopen("results.txt", "wb");
-    printf("результаты выведутся в файле results.txt");
+    printf("результаты выведутся в файле results.txt\n");
     while(feof(f1) == 0) {
         fread(&letter, 1, 1, f1);
         if(letter != '\n') 

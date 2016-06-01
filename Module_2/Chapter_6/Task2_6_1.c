@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-int main ()
+int main (int argc,char * argv[])
 {	
 	FILE *f;
 	FILE *p;
-	f=fopen("Text.txt","r");
+	f=fopen(argv[1],"r");
+	
 	p=fopen("results.txt","w");
 	char string[250];
 	char **mas1;
 	char *mas2;
 	int n = 1, *amount, t = 0, i = 0, j;
-	printf("результаты выведутся в файле results.txt");
+	printf("результаты выведутся в файле results.txt\n");
 	fscanf(f,"%s",string);
 	mas1 = (char**)malloc(n * sizeof(char*));
 	mas1[n-1] = (char*)malloc(sizeof(char) * strlen(string) + 1);
