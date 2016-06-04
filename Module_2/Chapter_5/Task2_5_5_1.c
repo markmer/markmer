@@ -3,6 +3,7 @@
 
 int Det(int **matr, int m) 
 {
+  count();
   int i,j,D,k,n;
   int **p;
   p = (int**)malloc(sizeof(int*)*m);
@@ -32,3 +33,8 @@ int Det(int **matr, int m)
   }
   return(D);
 }
+
+int count(){
+	static int count=0;
+	count++;
+	return (count);}

@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <assert.h>
-#include "Task2_5_5_1.c"
+#include  "Task2_5_5_1.c"
 
-int main()
-{ 
-	int n,i,j,c, k=0;
+int main() {
+	int n,i,j,c;
 	float D,d;
 	int **matr;
 	printf("Введите размерность квадратной матрицы: ");
@@ -20,7 +19,7 @@ int main()
 		}
 	}
 	D=Det(matr,n);
-	k++;
+	
 	assert(D!=0);
 	int svob[n];  
 	printf("Введите столбец свободных коэффициентов:\n");
@@ -39,7 +38,6 @@ int main()
 			svob[j]=c;
 		}
 		d=Det(matr,n);
-		k++;
 		printf("x%d=%f\n",i+1, d/D);
 		for(j=0;j<n;j++)
 		{
@@ -48,6 +46,6 @@ int main()
 			matr[j][i]=c;
 		}
 	}
-	printf("Количество вызовов программы  для определителя: %d\n",k);
+	printf("число вызовов функций %d\n",count()); 
 	return 0;
 }
