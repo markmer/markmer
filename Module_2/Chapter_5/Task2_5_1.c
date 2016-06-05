@@ -1,20 +1,27 @@
 #include <stdio.h>
  void copy(char * a,char * b);
-int i;
 
 int main()
 {
-	
-    char string1[255],string2[255];
+	int k;
+    char string1[20];
     printf("Введите строку\n");
-    gets(&string1[0]);
-    for(i=0;string1[i]!='\0';i++)
-		copy(&string1[0],&string2[0] );
-    printf("Ваша строка: \n %s \nНовая строка:\n %s \n",&string1[0],&string2[0] );
+    scanf("%s",string1);
+    for(k=0;string1[k]!='\0';k++);
+    printf("длина - %d\n",k);
+    char string2[k];
+    
+		copy(string1,string2);
+	
+    printf("Ваша строка: \n %s \nНовая строка:\n %s \n",string1,string2 );
     return 0 ;
 }
 
 void copy(char * a,char * b)
 {
-   *(b+i)=*(a+i);
+	while( *a!='\0'){
+		*b=*a;
+		a++;
+		b++;
 }
+*b='\0';}
