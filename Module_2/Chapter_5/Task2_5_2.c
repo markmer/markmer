@@ -22,7 +22,8 @@ int main()
         printf("Ваша строка:\n %s \n копия строки:\n %s \n",string1,string2 );
         break;
     	case 'i':
-    	invert(&string1[0],&string2[k] );
+    	printf("-------------\n");
+    	invert(string1,string2 );
     	printf("Ваша строка:\n %s \nИнвертированная строка:\n %s \n",string1,string2 );
     	break;
     	default:printf("Вы так и не решили\n");
@@ -31,13 +32,21 @@ int main()
 }
 
 void invert(char * a,char * b)
-{	*b='\0';
-	b--;
-	while( *a!='\0'){
-		*b=*a;
-		a++;
-		b--;
-}}
+{	int i=0;
+	char * j;
+	j=a;
+	while( *j!='\0'){j++;i++;}
+	--i;
+	 int c=0;
+    while (a[c])
+    {
+    *b=*(a+i);
+    --i;
+    ++c;
+    ++b;
+    }
+    *b='\0';	
+}
 
 void copy(char * a,char * b)
 {
